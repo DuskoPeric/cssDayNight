@@ -1,0 +1,767 @@
+body{
+    margin: 0;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background:#4193b9;
+}
+main.night-v{
+  background:#1d4456;
+}
+.main-circle{
+    background: #4ed0e2;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    border: solid 20px #00000014;
+}
+.main-circle.active{
+    -webkit-transition: all 2s ease-out;
+    -moz-transition: all 2s ease-out;
+    -o-transition: all 2s ease-out;
+    transition: all 2s ease-out;
+    background:#1d4456;
+}
+.mountain{
+    width:500px;
+    position: absolute;
+    right: 0px;
+}
+.mountain2{
+    width:500px;
+    position: absolute;
+    left: -171px;
+    top: 62px;
+}
+.hill-left {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 183px solid transparent;
+    border-right: 52px solid transparent;
+    border-bottom: 298px solid #8c6e63;
+    top: 100px;
+    right: 109px;
+  }
+  .hill-right {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 0px solid transparent;
+    border-right: 161px solid transparent;
+    border-bottom: 298px solid #6d4d42;
+    top: 100px;
+    right: 0px;
+  }
+  .ice1{
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 47px solid transparent;
+    border-bottom: 51px solid transparent;
+    border-left: 28px solid rgb(255, 255, 255);
+    top: 99px;
+    right: 160px;
+    transform: rotate(31deg);
+  }
+  .ice2{
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 16px solid transparent;
+    border-right: 16px solid transparent;
+    border-top: 32px solid rgb(255, 255, 255);
+    top: 154px;
+    right: 160px;
+    transform: rotate(9deg);
+  }
+  .ice3{
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 32px solid transparent;
+    border-bottom: 47px solid transparent;
+    border-right: 27px solid rgb(255, 255, 255);
+    top: 102px;
+    right: 155px;
+    transform: rotate(-10deg);
+  }
+  .ice4{
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 63px solid transparent;
+    border-bottom: 19px solid transparent;
+    border-left: 23px solid #bcbcbd;
+    top: 96px;
+    right: 132px;
+    transform: rotate(-10deg);
+  }
+  .ice1.small{
+    border-top: 30px solid transparent;
+    border-bottom: 27px solid transparent;
+    border-left: 28px solid rgb(255, 255, 255);
+    top: 104px;
+    right: 151px;
+    transform: rotate(31deg);
+  }
+  .ice2.small{
+    border-left: 10px solid transparent;
+    border-right: 16px solid transparent;
+    border-top: 25px solid rgb(255, 255, 255);
+    top: 139px;
+    right: 160px;
+    transform: rotate(9deg);
+  }
+  .ice3.small{
+    border-top: 17px solid transparent;
+    border-bottom: 47px solid transparent;
+    border-right: 16px solid rgb(255, 255, 255);
+    top: 100px;
+    right: 155px;
+    transform: rotate(-10deg);
+  }
+  .ice4.small{
+    border-top: 48px solid transparent;
+    border-bottom: 19px solid transparent;
+    border-left: 17px solid #bcbcbd;
+    top: 96px;
+    right: 139px;
+    transform: rotate(-10deg);
+  }
+  .grass{
+      width: 500px;
+      height: 105px;
+      background: #439f47;
+      position: absolute;
+      bottom: 0px;  ;
+  }
+  .cloud{
+    top: 74px;
+    width: 100px;
+    height: 50px;
+    background: transparent;
+    position: absolute;
+    right: 314px;
+    overflow: hidden;
+    -webkit-transition: all 2s ease-out;
+    -moz-transition: all 2s ease-out;
+    -o-transition: all 2s ease-out;
+    transition: all 2s ease-out;
+  }
+  .cloud.night-v, .cloud1.night-v, .cloud2.night-v, .cloud, .cloud1, .cloud2,main.night-v,main,.dark,.main-circle,.moon,.moon.active{
+    -webkit-transition: all 2s ease-out;
+    -moz-transition: all 2s ease-out;
+    -o-transition: all 2s ease-out;
+    transition: all 2s ease-out;
+  }
+  .star,.star.active{
+    -webkit-transition: all 1s ease-out;
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    transition: all 1s ease-out;
+  }
+.cloud.night-v{
+  right: 514px;
+}
+.cloud1.night-v{
+  right: -100px;
+}
+.cloud2.night-v{
+  right: 500px;
+}
+  .cloud1{
+    top: 112px;
+    width: 75px;
+    height:38px;
+    background: transparent;
+    position: absolute;
+    right: 81px;
+    overflow: hidden;
+    -webkit-transition: all 2s ease-out;
+    -moz-transition: all 2s ease-out;
+    -o-transition: all 2s ease-out;
+    transition: all 2s ease-out;
+  }
+  
+  .cloud2{
+    top: 166px;
+    width: 35px;
+    height: 18px;
+    background: transparent;
+    position: absolute;
+    right: 417px;
+    overflow: hidden;
+    -webkit-transition: all 2s ease-out;
+    -moz-transition: all 2s ease-out;
+    -o-transition: all 2s ease-out;
+    transition: all 2s ease-out;
+  }
+  .circle1{
+    position: absolute;
+    width: 40%;
+    background: white;
+    border-radius: 50%;
+    height: 81%;
+    top: 0px;
+    left: 33%;
+  }
+  .circle2{
+    position: absolute;
+    width: 30%;
+    background: white;
+    border-radius: 50%;
+    height: 60%;
+    top: 31%;
+    left: 12%;
+  }
+  .circle3{
+    position: absolute;
+    width: 25%;
+    background: white;
+    border-radius: 50%;
+    height: 50%;
+    top: 70%;
+    left: 0%;
+  }
+  .circle4{
+    position: absolute;
+    width: 35%;
+    background: white;
+    border-radius: 50%;
+    height: 70%;
+    top: 37%;
+    left: 52%;
+  }
+  .circle5{
+    position: absolute;
+    width: 35%;
+    background: white;
+    border-radius: 50%;
+    height: 70%;
+    top: 59%;
+    left: 65%;
+  }
+  .circle6{
+    position: absolute;
+    width: 40%;
+    background: white;
+    border-radius: 50%;
+    height: 80%;
+    top: 59%;
+    left: 22%;
+  }
+.sun{
+    width: 80px;
+    height: 80px;
+    background: #febe00;
+    position: absolute;
+    border-radius: 50%;
+    left: 194px;
+    top: 31px;
+    box-shadow: inset 0px 2px 0 0px #f3b90a,
+     0 0 10px 5px rgba(255, 252, 85, 0.9);
+	animation: sunshine 3s alternate infinite;
+}
+.sun.night{
+    /* left: 334px; */
+    top: 300px;
+    background: #bb8d02;
+    -webkit-transition: all 2s ease-out;
+    -moz-transition: all 2s ease-out;
+    -o-transition: all 2s ease-out;
+    transition: all 2s ease-out;
+    animation: sunrise 2s alternate;
+}
+.sun.day{
+  /* left: 334px; */
+  top: 31px;
+  background: #febe00;
+  -webkit-transition: all 2s ease-out;
+  -moz-transition: all 2s ease-out;
+  -o-transition: all 2s ease-out;
+  transition: all 2s ease-out;
+  animation: sunset 2s alternate;
+}
+
+.hill{
+    width: 200px;
+    height: 100px;
+    background: #327e36;
+    position: absolute;
+    bottom: 23px;
+    left: 330px;
+    transform: rotate(-10deg);
+}
+.hill2{
+    width: 200px;
+    height: 100px;
+    background: #327e36;
+    position: absolute;
+    bottom: 24px;
+    left: -19px;
+    /* border-radius: 92px; */
+    transform: rotate(12deg);
+}
+.tree-l{
+    width: 50px;
+    height: 100px;
+    position: absolute;
+    top: 344px;
+    left: 318px;
+}
+.tree-l1{
+    width: 30px;
+    height: 60px;
+    position: absolute;
+    top: 357px;
+    left: 374px;
+}
+.tree-l2{
+    width: 30px;
+    height: 60px;
+    position: absolute;
+    top: 357px;
+    left: 274px;
+}
+.tree-l3{
+    width: 40px;
+    height: 80px;
+    position: absolute;
+    top: 357px;
+    left: 74px;
+}
+.tree-l4{
+    width: 60px;
+    height: 120px;
+    position: absolute;
+    top: 360px;
+    left: 174px;
+}
+.tree-l5{
+    width: 35px;
+    height: 70px;
+    position: absolute;
+    top: 360px;
+    left: 150px;
+    z-index: 1;
+}
+.tree-l6{
+    width: 55px;
+    height: 110px;
+    position: absolute;
+    top: 352px;
+    left: 240px;
+    z-index: 2;
+}
+.treetop{
+    z-index: 2;
+    height: 80%;
+    width: 100%;
+    border-radius: 50%;
+    position: absolute;
+    background: #2e7c31; 
+    background: -moz-linear-gradient(left,  #2e7c31 0%, #2e7c31 50%, #1a5f1f 50%, #1a5f1f 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  #2e7c31 0%,#2e7c31 50%,#1a5f1f 50%,#1a5f1f 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  #2e7c31 0%,#2e7c31 50%,#1a5f1f 50%,#1a5f1f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2e7c31', endColorstr='#1a5f1f',GradientType=1 ); /* IE6-9 */
+}
+.scape{
+    z-index: 1;
+    width: 20%;
+    height: 30%;
+    position: absolute;
+    bottom: 0;
+    left: 40%;
+    border-radius: 14%;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#644844+0,644844+65,453825+65,453825+100 */
+background: #644844; /* Old browsers */
+background: -moz-linear-gradient(left,  #644844 0%, #644844 65%, #453825 65%, #453825 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  #644844 0%,#644844 65%,#453825 65%,#453825 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  #644844 0%,#644844 65%,#453825 65%,#453825 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#644844', endColorstr='#453825',GradientType=1 ); /* IE6-9 */
+
+}
+.light-dot{
+    width: 12%;
+    height: 6%;
+    background: #2e7c31;
+    position: absolute;
+    border-radius: 50%;
+    z-index: 3;
+}
+.l1{
+    top: 10%;
+    right: 26%;
+}
+.l2{
+    top: 24%;
+    right: 15%;
+}
+.l3{
+    top: 38%;
+    right: 31%;
+}
+.l4{
+    top: 50%;
+    right: 16%;
+}
+.l5{
+    top: 63%;
+    right: 26%;
+}
+.dark-dot{
+    width: 12%;
+    height: 6%;
+    background: #1a5f1f;
+    position: absolute;
+    border-radius: 50%;
+    z-index: 3;
+}
+.r1{
+    top: 15%;
+    left: 24%;
+}
+.r2{
+    top: 27%;
+    left: 30%;
+}
+.r3{
+    top: 39%;
+    left: 12%;
+}
+.r4{
+    top: 50%;
+    left: 28%;
+}
+.r5{
+    top: 63%;
+    left: 26%;
+}
+
+.dark{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #00000096;
+    z-index: 5;
+    opacity: 0;
+}
+.dark.active{
+    -webkit-transition: all 2s ease-out;
+    -moz-transition: all 2s ease-out;
+    -o-transition: all 2s ease-out;
+    transition: all 2s ease-out;
+    opacity: 1;
+}
+.moon{
+  opacity: 0;
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  left: 200px;
+  top: 40px;
+  border-radius: 50%;
+  background: #8c8c8c;
+  box-shadow: inset -12px 2px 0 0px #929292, 0 0 5px 3px rgba(238, 238, 238, 0.4);
+  z-index: 9;
+}
+.moon.night-v{
+  opacity: 1;
+  animation: moonup 3s alternate;
+}
+.moon.day{
+  opacity: 0;
+  animation: moondown 1.5s alternate;
+}
+.freckle1{
+  top: 23%;
+  width: 20%;
+  height: 20%;
+  position: absolute;
+  background: #888787;
+  border-radius: 50%;
+  left: 42%;
+  z-index: 11;
+}
+.freckle2{
+  top: 23%;
+  width: 22%;
+  height: 22%;
+  position: absolute;
+  background: #787878;
+  border-radius: 50%;
+  left: 39%;
+  z-index: 10;
+}
+.freckle3{
+  top: 64%;
+  width: 18%;
+  height: 18%;
+  position: absolute;
+  background: #888787;
+  border-radius: 50%;
+  left: 54%;
+  z-index: 11;
+}
+.freckle4{
+  top: 64%;
+  width: 20%;
+  height: 20%;
+  position: absolute;
+  background: #787878;
+  border-radius: 50%;
+  left: 51%;
+  z-index: 10;
+}
+.freckle5{
+  top: 47%;
+  width: 15%;
+  height: 15%;
+  position: absolute;
+  background: #888787;
+  border-radius: 50%;
+  left: 13%;
+  z-index: 11;
+}
+.freckle6{
+  top: 46%;
+  width: 17%;
+  height: 17%;
+  position: absolute;
+  background: #787878;
+  border-radius: 50%;
+  left: 10%;
+  z-index: 10;
+}
+.star {
+  opacity: 0;
+  top: 116px;
+  left: 104px;
+  z-index: 15;
+  width: 3px;
+  height: 3px;
+  background: #e0e0e0;
+  z-index: 15;
+  position: absolute;
+  border-radius: 50%;
+  box-shadow:  0 0 5px 3px rgba(223, 223, 223, 0.4);
+ 
+}
+.star.active {
+opacity: 1;
+}
+.star.s1{
+  top: 68px;
+  left: 142px;
+  animation: starshine 3s alternate infinite;
+}
+.star.s2{
+  top: 73px;
+  left: 367px;
+}
+.star.s3{
+  top: 194px;
+  left: 43px;
+  animation: starshine 3s alternate infinite;
+}
+.star.s4{
+  top: 150px;
+  left: 218px;
+}
+.star.s5{
+  top: 159px;
+  left: 404px;
+  animation: starshine 3s alternate infinite;
+}
+.star.s6{
+  top: 116px;
+  left: 104px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #0c1c23;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+}
+
+input:checked + .slider {
+  background-color: #4ed0e2;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+.switch-holder{
+  display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+   .day-icon{
+    margin-top: 7px;
+    background: #febe00;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    text-align: center;
+    margin-left: 15px;
+    }
+    .day-icon:before,
+    .day-icon:after {
+content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background: #febe00;
+    }
+    .day-icon:before {
+      transform: rotate(30deg);
+    }
+    .day-icon:after {
+      transform: rotate(60deg);
+    }
+.night-icon{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    box-shadow: 7px 3px 0 0 #dcdcdc;
+margin-top: 3px;
+    margin-right: 18px;
+}
+
+
+
+
+
+
+@keyframes sunshine{
+	0%{
+	box-shadow: 
+		inset 0px 2px 0 0px #f3b90a,
+        0 0 10px 5px rgba(255, 252, 85, 0.9);
+	}
+	50%{
+	box-shadow:
+		inset 0px 2px 0 0px #f3b90a,
+        0 0 15px 8px rgba(255, 252, 85, 0.9);
+	}
+}
+@keyframes starshine{
+	0%{
+	box-shadow: 0 0 2.5px 1.5px rgba(223, 223, 223, 0.4);
+	}
+	50%{
+	box-shadow:0 0 5px 3px rgba(252, 251, 251, 0.4);
+	}
+}
+@keyframes sunrise{
+	0%{
+    width:80px;
+    height: 80px;
+	}
+	80%{
+    width:120px;
+    height: 120px;
+  }
+  100%{
+    width:80px;
+    height: 80px;
+	}
+}
+@keyframes sunset{
+	0%{
+    width:40px;
+    height: 40px;
+    left: 224px;
+	}
+  100%{
+    width:80px;
+    height: 80px;
+    left: 194px;
+	}
+}
+@keyframes moonup{
+	0%{
+opacity: 0;
+width: 0px;
+height: 0px;
+left: 235px;
+top: 75px;
+	}
+  100%{
+opacity: 1;
+width: 70px;
+height: 70px;
+left: 200px;
+top: 40px;
+	}
+}
+@keyframes moondown{
+  0%{
+    opacity: 1;
+    width: 70px;
+    height: 70px;
+    left: 200px;
+    top: 40px;
+      }
+	100%{
+opacity: 0;
+width: 0px;
+height: 0px;
+left: 235px;
+top: 75px;
+	}
+
+}
